@@ -5,8 +5,8 @@ import random
 def generate_word_of_the_day():
     file1 = "dictionaries/dictionary_allowed.txt"
     dict_for_word_of_day = open_dictionary(file1)
-
-    date = datetime.now().year + datetime.now().month + datetime.now().day + 100
+    # generates random seed for word of the day based on today's date
+    date = datetime.now().year + datetime.now().month + datetime.now().day + 69
     random.seed(date)
     return dict_for_word_of_day[random.randint(0,len(dict_for_word_of_day))]
 
