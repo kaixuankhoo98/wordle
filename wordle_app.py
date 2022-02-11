@@ -11,8 +11,9 @@ def home():
     return render_template("main_page.html")
 
 @app.route("/game/")
-def game():
-    return render_template("game.html")
+def game(g1="     ",g2="     ",g3="     ",g4="     ",g5="     ",g6="     "):
+    g1 = "guess"
+    return render_template("game.html",g1=g1,g2=g2,g3=g3,g4=g4,g5=g5,g6=g6)
 
 @app.route("/future_updates/")
 def future():

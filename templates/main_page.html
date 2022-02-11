@@ -3,11 +3,18 @@
 {% block content %}
     <center>
     <br><br>        
-    <h3>Rules</h3>
-    <p>
-        1) ... <br>
-        2) ... <br>
-        3) ... <br>
+    <h3 style="color:#c7c7c7">Rules</h3>
+    <p style="color:#c7c7c7">
+        Guess the KORDLE in 6 tries. <br>
+        Each guess must be a valid 5 letter word. Press enter to submit. <br>
+        After each guess, the color of the *letter will change to show how close your guess was to the word. <br><br><br>
+        <b>Examples</b><br><br>
+        <correct>&nbspS&nbsp</correct> <grey>&nbspH&nbsp</grey> <grey>&nbspR&nbsp</grey> <grey>&nbspE&nbsp</grey> <grey>&nbspK&nbsp</grey><br>
+        The letter S is in the word and in the correct spot. <br><br>
+        <grey>&nbspL&nbsp</grey> <wrong_spot>&nbspO&nbsp</wrong_spot> <grey>&nbspV&nbsp</grey> <grey>&nbspE&nbsp</grey> <grey>&nbspS&nbsp</grey><br>
+        The letter O is in the word but in the wrong spot. <br><br>
+        <grey>&nbspF&nbsp</grey> <grey>&nbspI&nbsp</grey> <grey>&nbspO&nbsp</grey> <wrong_letter>&nbspN&nbsp</wrong_letter> <grey>&nbspA&nbsp</grey><br>
+        The letter N is not in the word in any spot. <br><br>
     </p>
         </center>
     {% endblock %}
