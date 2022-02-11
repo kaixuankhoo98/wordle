@@ -8,5 +8,5 @@ file = "dictionaries/dictionary_full.txt"
 full_dict = f.open_dictionary(file)
 
 user_input = "abate"
-# assert(f.is_user_input_in_dictionary(user_input,dict))
+assert(f.is_user_input_in_dictionary(user_input))
 print(f.check_word(word_of_the_day,user_input))

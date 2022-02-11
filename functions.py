@@ -16,10 +16,15 @@ def open_dictionary(filename):
     content = content.replace('"',"") # strips dict of quotation marks
     return content.split(",") # splits by comma
 
-def is_user_input_in_dictionary(user_input, dictionary):
-    if user_input not in dictionary:
-        return False
-    return True
+def is_user_input_in_dictionary(user_input):
+    dictionary = open_dictionary("dictionaries/dictionary_full.txt")
+    dictionary2 = open_dictionary("dictionaries/dictionary_allowed.txt")
+    flag = False
+    if user_input in dictionary:
+        flag = True
+    if user_input in dictionary2:
+        flag = True
+    return flag
 
 def check_word(word_of_the_day, user_input):
     '''
